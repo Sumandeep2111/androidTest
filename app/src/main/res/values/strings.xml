@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sumandeep_c0764942_assignment</string>
+    <string name="api_key">AIzaSyBChIa_j4BNrLjISIU45BElon66Ps3xogQ</string>
+
+    <string-array name="mapType">
+        <item>Satelite</item>
+        <item>Default</item>
+        <item>Hybride</item>
+    </string-array>
+</resources>

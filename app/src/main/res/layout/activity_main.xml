@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="btnClick"
+                android:text="Duration"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="btnClick"
+                android:text="Clear"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_restaurants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="btnClick"
+                android:text="Restaurants"
+                android:layout_marginRight="5dp"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btn_museum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimaryDark"
+                android:onClick="btnClick"
+                android:text="Museums"
+                android:textColor="#fff" />
+
+
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_direction"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Get Direction"
+            android:textColor="#fff" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="167dp"
+            android:layout_height="match_parent"
+            android:entries="@array/mapType"
+            android:background="@color/colorPrimaryDark"/>
+
+        <ImageButton
+            android:id="@+id/btn_Fav_place"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="Direction"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
